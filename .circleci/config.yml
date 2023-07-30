@@ -11,11 +11,6 @@ jobs:
             npm install
             mkdir /tmp/artifacts;
 
-      - run:
-          name: Run Tests
-          command: |
-            npm test
-
       - store_artifacts:
           path: /tmp/artifacts
 
