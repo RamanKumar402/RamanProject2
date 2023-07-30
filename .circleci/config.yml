@@ -15,10 +15,6 @@ jobs:
       - store_artifacts:
           path: /tmp/artifacts
 
-      - run:
-          name: Build Project
-          command: npm run build
-
       - add_ssh_keys:
           fingerprints:
             - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdK5x2L5s7nguzSrQODCjDJpAAYnE1pswxfRkmB0rqxxgQMm7GMbYUF54w/bJL1/S1P0J/c4LOrpKQjNGDn9BxvCciR7OOMYFeGjxqA+/JN2uXgbYgk9cxZrLvcS2q+JC5hxsh7tCpxwvQOCEOLzOF6Ge0J9RygyW4ir8fG5ZeCSU3KVuYnpsScc/eDaCRobpPcxY2C/XTMxVMa9fJfg5tQgd6nafpESDaAxrA+8sIU88GXxI76B5pcrKx1wAqpzeO5+HuWsIHoa6Cf/27qfSqlujJ/gP7gpE7cf58+Pb4/5RUSwSQIPaEcp2cxpMBhqiWLLkbqAWxEQc45aR0ThixpzP0xQdbeDu7KptcPYPkgN6x/ZIVHMDFxpWjvs3VaTEww5CPPNN01pomadS5kq2KSIrDS9Nzzs7v0O1+AfwTukXfjPcq260kSZocWPRV78OQH7YGH/gBDGoOE2rPIvjhyiHhz+6JLErUzM9VQr7J5eDhZ3BRvt63gciywp41iVE= admin@admins-MacBook-Pro.local"
