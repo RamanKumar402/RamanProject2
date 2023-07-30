@@ -3,8 +3,6 @@ jobs:
   build:
     docker:
       - image: circleci/node:14  # Use the desired Node.js version
-        ports:
-          - 22:22  # Expose port 22 on the container
     steps:
       - checkout  # Pull down the code from the repository
       - run:
