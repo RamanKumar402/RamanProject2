@@ -7,7 +7,13 @@ jobs:
       - checkout  # Pull down the code from the repository
       - run:
           name: Install Dependencies
-          command: npm install
+	command: |
+		npm install
+            	mkdir /tmp/artifacts;
+
+- store_artifacts:
+          path: /tmp/artifacts
+
 workflows:
   version: 2
   build_and_test:
